@@ -1,0 +1,33 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Welcome</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div id="formSection" class="animation">
+                <h1>Welcome!</h1>
+                <div class="form-group">
+                    <input type="text" id="nameInput" placeholder="Enter your name" required>
+                    <button onclick="generatePersonalizedMessage()">Generate Welcome</button>
+                </div>
+            </div>
+            
+            <div id="personalizedContent" class="animation">
+                <h1>Welcome, <span id="personName" class="highlight"></span>!</h1>
+                <div class="welcome-text">
+                    <p>Thank you for visiting this page.</p>
+                    <p>This message was specially created for you!</p>
+                    <p>Current visitor: <span id="visitorName" class="highlight"></span></p>
+                </div>
+                <button onclick="resetForm()" style="margin-top: 20px;">Start Over</button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+    </html>
+    
